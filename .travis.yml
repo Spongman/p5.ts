@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "8"
+
+install:
+  - npm install
+cache:
+  directories:
+    - node_modules
+
+script: node src/cli.js download-p5 generate-data generate ava
+
